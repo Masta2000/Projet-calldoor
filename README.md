@@ -1,4 +1,6 @@
-# Projet-calldoor (no graphic charter from the client / deadline: one and a half months)
+# Projet-calldoor 
+
+(no graphic charter from the client / deadline: one and a half months)
 
 Calldoor is a web-app that allows employees to rate their companies on the respect for the right to disconnect.
 
