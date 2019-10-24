@@ -1,0 +1,42 @@
+.CommentCompany {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 21px;
+    box-shadow: 2px 2px 9px #001d33;
+      
+    .AvisPropos {
+      width: 300px;
+      height: 100px;
+      overflow: auto;
+    }  
+
+      .imgUser {
+        align-self: flex-start;
+        margin: 10px 10px 10px 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-right: 30px;
+        margin-left: 30px;
+        width: 300px;
+        .AvisPropos {
+          width: 200px;
+          height: 100px;
+          overflow: auto;
+        } 
+      } 
+
+      @media screen and (max-width: 480px) {
+        .AvisPropos {
+          width: 200px;
+          height: 80px;
+          overflow: auto;
+        } 
+      }
+}

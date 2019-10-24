@@ -1,0 +1,78 @@
+.ManageCompanyByAdmin {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 230px;
+  padding-top: 70px;
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .MenuNav {
+    display: flex;
+    flex-direction: column;
+    background-color: #001d33;
+    border: 1px solid #001d33;
+    border-radius: 11px;
+    transition: transform .3s;
+    height: 350px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .ManageCompany{
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    .ListCards {
+      justify-content: center;
+    }
+
+    input {
+    border: 1px solid #001d33;
+    }
+
+    button {
+      margin-top: 100px;
+      border-radius: 11px;
+      padding: 10px;
+      background-color: #18a300;
+      color: white;
+      font-size: 16px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+  }
+  display: flex;
+
+
+  @media screen and (min-width: 640px) {
+    padding-top: 70px;
+  }
+
+  @media only screen and (max-width: 414px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .ManageCompany {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .MenuNav {
+      margin-top: 250px;
+    }
+  }
+}

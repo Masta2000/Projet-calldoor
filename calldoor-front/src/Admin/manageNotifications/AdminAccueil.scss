@@ -1,0 +1,25 @@
+.AdminAccueil {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 145px);
+
+
+    .MenuNav {
+      display: flex;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      width: 260px;
+      margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    @media only screen and (max-width: 375px) {
+      margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,25 @@
+.LegalNotice {
+  min-height: calc(100vh - 75px);
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .LegalMentions {
+    padding-top: 100px;
+  }
+
+  .Host {
+    padding-bottom: 109px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .LegalMentions { padding-top: 30px}
+    .Host { padding-bottom: 20px}
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .LegalMentions { padding-top: 250px}
+  }
+}

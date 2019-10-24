@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+.Company {
+  padding-top: 70px;
+
+  .titlePageCompany{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      padding-top: 80px;
+    }
+  }
+
+  .contentPageCompany {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+    }
+}

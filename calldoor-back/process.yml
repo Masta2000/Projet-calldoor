@@ -1,0 +1,9 @@
+apps:
+  - script   : './bin/start'
+    name     : '0219-calldoor'
+    exec_mode: 'cluster'
+    instances: 1
+    env:
+        "NODE_ENV": "production"
+        "PORT": 6001
+    source_map_support: false

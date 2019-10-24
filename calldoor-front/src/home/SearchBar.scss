@@ -1,0 +1,41 @@
+.SearchBar {
+  position: relative;
+  width: 325px;
+  height: 50px;
+  margin: 0 auto;
+  z-index: 0;
+
+  .search-box-input {
+    width: 295px;
+    font-size: 20px;
+    border-radius: 11px;
+    border-width: 2px;
+    padding: 10px 10px 10px 15px;
+    background-color: white;
+    color: #b30e2d;
+    outline: 0;
+  }
+
+  .inputImage {
+    height : 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;  
+  }
+
+  input {
+      width: 250px;
+      height: 23px;
+      border-radius: 15px;
+      border: 2px;
+      color: #b30e2d;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ::placeholder {
+    color: #b30e2d;
+  }
+}

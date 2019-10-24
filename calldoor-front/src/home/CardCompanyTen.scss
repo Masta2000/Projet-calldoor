@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+.CardCompanyTen {
+  
+  h1 {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 30px;
+      margin: 20px;
+    }
+  }
+
+  .top3 {
+    
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 80px;
+      height: 600px;
+      animation-name: levitation;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      text-align: center;
+
+      .circle {
+        width: 100%;
+        height: 65%;
+        background-color: white;
+        clip-path: circle(84% at 50% 8%);
+
+      }
+
+      @keyframes levitation {
+        0% {
+          transform: translateY(0px);
+        }
+
+        33% {
+          transform: translateY(1.5px);
+        }
+
+        66% {
+          transform: translateY(-1.5px);
+        }
+
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .CardCompany {
+        flex-direction: column;
+        height: 450px;
+        width: 300px;
+        box-shadow: 2px 2px 9px rgba(0, 0, 0, .4);
+        border-radius: 11px;
+        transition: transform .2s;
+
+        .imgCompany {
+          height: 100%;
+          width: 80%;
+          background-color: white;
+          border-radius: 21px;
+          clip-path: circle(100% at 50% 8%); 
+        }
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+        
+        .descriptionCompany {
+          display: none;
+        }
+      }
+
+      .CardCompany:nth-child(1) {
+        order: 2;
+        background-color: #d7b71898;
+        align-self: flex-start;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        button {
+          font-size: 15px;
+          color: white;
+          border: solid 1px;
+          border-color: white;
+          height: auto;
+          background-color: #d7b71898;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .imgCompany {
+          width: 150px;
+          margin-top: 40px;
+        }
+      }
+
+      .CardCompany:nth-child(2) {
+        order: 1;
+        background-color: #b0aaacb0;
+        align-self: flex-end;
+        margin-bottom: 70px;
+
+        button {
+          font-size: 15px;
+          color: white;
+          border: solid 1px;
+          border-color: white;
+          height: auto;
+          background-color: #b0aaacb0;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .imgCompany { 
+          @media screen and (min-width: 768px) {
+            margin-top: 40px;
+            width: 150px;
+            height: 150px;
+          }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          margin-left: 20px;
+        }
+      }
+
+      .CardCompany:nth-child(3) {
+        order: 3;
+        background-color: #b2734fc5;
+        align-self: flex-end;
+
+        button {
+          font-size: 15px;
+          color: white;
+          border: solid 1px;
+          border-color: white;
+          height: auto;
+          background-color: #b2734fc5;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      .CardCompany:nth-child(1) {
+        background-color: #d7b71898;
+      }
+      .CardCompany:nth-child(2) {
+        background-color: #b0aaacb0;
+      }
+      .CardCompany:nth-child(3) {
+        background-color: #b2734fc5;
+      }
+    }
+  }
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: center;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+  }
+
+  .top7 {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
+      .circle {
+        height: 100%;
+        width: 70%;
+        background-color: white;
+        clip-path: circle(80% at 7% 50%);
+        display: flex;
+        align-items: center;
+      }
+
+    .CardCompany {
+      background-color: #001d33;
+      border: none;
+      border-radius: 11px;
+      box-shadow: 2px 2px 9px rgba(0, 0, 0, .4);
+      transition: transform .3s;
+
+      button {
+        font-size: 15px;
+        color: white;
+        border: solid 1px;
+        border-color: white;
+        height: auto;
+        background-color: #001d33;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .cardCompanyRight {
+        color: white;
+        display: block;
+        text-align: center;
+        margin-right: 20px;
+      }
+
+      .imgCompany {
+        margin-left: 20px;
+
+        @media screen and (max-width: 768px) {
+          width: 120px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .card-rating img {
+      margin: 0;
+    }
+
+    .CardCompany .descriptionCompany {
+      display: none;
+    }
+  }
+ }
+}

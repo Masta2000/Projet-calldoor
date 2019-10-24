@@ -1,0 +1,46 @@
+$red: #e73d3e;
+
+.Quiz {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  padding-top: 70px;
+  text-align: center;
+  color: white;
+  background-image: url('/image/clavierfonce.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input[type=date] {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid $red;
+    border-radius: 8px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 15px;
+    &:focus {
+      box-shadow:0 0px 2px rgba($red, 1)!important;
+    }
+
+  }
+  ul {
+    padding-inline-start: 0px;
+  }
+
+@media (max-width: 480px) {
+  align-items: baseline;
+  input[type=date] {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type=date] {
+    width: 40%;
+  }
+}
+
+
+}

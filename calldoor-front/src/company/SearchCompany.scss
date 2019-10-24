@@ -1,0 +1,53 @@
+.SearchCompany {
+  margin: 5px 0 0;
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  
+
+    @media screen and (min-width: 768px) {
+      width: 315px;
+    }
+      
+    .imgCompany {
+      max-width: 70px;
+      margin: 10px 50px 10px 10px;
+      align-self: left;
+
+        @media screen and (min-width: 768px) {
+          margin: 10px 30px 10px 10px;
+           max-width: 70px;
+           max-height: 70px;
+        }
+    }
+
+    .titleCompany {
+      @media screen and (max-width: 768px) {
+        margin-right: 4px;
+      }
+    }
+
+    .totalCommentCompany {
+      display: none;
+    }
+
+    .cardCompanyRight {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .descriptionCompany {
+      display: none;
+    }
+
+    .cityCompany {
+      font-size: 10px;
+      margin-top: 15px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+}

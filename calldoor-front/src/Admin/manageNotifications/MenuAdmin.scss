@@ -1,0 +1,33 @@
+.MenuNav {
+    display: flex;
+    flex-direction: column;
+    background-color: #001d33;
+    border: 1px solid #001d33;
+    border-radius: 11px;
+    transition: transform .3s;
+    height: 350px;
+    text-align: center;
+    
+    .admin {
+        width: 250px;
+        margin-top: 40px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .admin:hover {
+      transform: scale(1.1);
+    }
+
+    .btn-deconnexion button {
+        background-color: #b30e2d;
+        border: 1px solid #b30e2d;
+        color: white;
+        border-radius: 11px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+}

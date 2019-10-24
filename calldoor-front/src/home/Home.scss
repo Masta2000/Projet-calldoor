@@ -1,0 +1,43 @@
+.Home {
+  background-color: white;
+
+  .home-search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 555px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("/image/Imagesearch6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    h1 {
+      position: absolute;
+      top: 80px;
+      text-align: center;
+      font-size: 50px;
+      z-index: 0;
+      text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+      
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 220px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      height: 540px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+  }
+}

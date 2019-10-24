@@ -1,0 +1,34 @@
+.UpdateOrDelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bouton1 {
+        padding: 10px;
+        color: white;
+        background-color: #b30e2d;
+        font-size: 12px;
+    }
+
+    .bouton2 {
+      padding: 10px;
+      color: white;
+      background-color: #18a300;
+      font-size: 12px;
+    }
+
+    .logo {
+        padding: 10px;
+        img {
+            width: 150px;
+        }
+    }
+
+    .name {
+        padding: 10px;
+    }
+
+    .city {
+        padding: 10px;
+    }
+}

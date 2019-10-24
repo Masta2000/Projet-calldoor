@@ -1,0 +1,22 @@
+$red: #e73d3e;
+
+.Question8 {
+  .select-button {
+    outline:0;
+    border: 1px solid $red;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 2em;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 15px;
+    resize: none;
+    color: white; 
+    background: $red;
+    cursor: pointer;
+    
+      
+      &:hover {
+        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6); 
+      }
+  }
+}

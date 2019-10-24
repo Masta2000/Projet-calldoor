@@ -1,0 +1,31 @@
+.CompanyAdmin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+
+  .CardCompany {
+    width: auto;
+    height: auto;
+    box-shadow: 2px 2px 9px #001d33;
+    border-radius: 21px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+      .card-rating {
+        display: none;
+      }
+    }
+
+  .GlobalRating {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .AllCommentsCompany {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}

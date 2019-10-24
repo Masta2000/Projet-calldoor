@@ -1,0 +1,46 @@
+.NewCompany {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: calc(100vh - 75px);
+    
+    .MenuNav {
+        display: flex;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        width: 260px;
+        margin: 0;
+      }
+    
+    .companies {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .UpdateOrDelete {
+        display: flex;
+        justify-content: space-around;
+
+        button {
+          border-radius: 11px;
+        }
+      }
+    }
+    
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 414px) {
+      justify-content: space-evenly;
+
+      .logo {
+        display: none;
+      }
+    }  
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
+.TextPresentation {
+  width: auto;
+  position: relative;
+  text-align: center;
+
+  .Block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .Parallax1 {
+      background-image: url("/image/deconnecter.png");
+      height:150px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
+    }
+
+    .Parallax2 {
+      background-image: url("/image/droitlaw.jpg");
+      height:350px;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: 0;
+      background-size: cover;
+      opacity: 1;
+    }
+
+    .Parallax3 {
+      background-image: url("/image/Notations.png");
+      height:300px;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: 0;
+      background-size: cover;
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: 414px) {
+      .Parallax2{
+        background-image: url("/image/droitlaw.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+      }
+      .Parallax3{
+        background-image: url("/image/Notations.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+      }
+    }
+  }
+
+  .Law {
+    width: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Vollkorn', serif;
+
+}
+
+  .Criteria {
+    width: 55%;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Vollkorn', serif;
+  }
+  
+  h1 {
+    color: black;
+    font-weight: bolder;
+    justify-self: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Vollkorn', serif;
+    padding: 60px;
+      @media screen and (max-width: 768px) {
+        padding: 30px;
+      }
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+  }
+}

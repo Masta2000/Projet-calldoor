@@ -1,0 +1,57 @@
+$red: #e73d3e;
+
+.ToolbarQuestions {
+
+  
+  .select-button {
+    border: 1px solid $red;
+    padding: 1em;
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 15px;
+    color: white; 
+    background: $red;
+    cursor: pointer;
+    display: inline-block;
+
+
+    &:disabled {
+      border-color: grey;
+      background-color: grey;
+      cursor: not-allowed;
+      font-style: italic;
+    }
+    
+      &:hover {
+        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6); 
+      }
+    
+  }
+
+  .advertise {
+    color: white;
+    font-style: italic;
+    font-size: 1em;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .select-button {
+      width: 35%;
+      margin: 1em;
+      display: block;
+    }
+  }
+  
+}

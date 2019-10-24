@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Droit à la déconnexion</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+	// browser window scroll (in pixels) after which the "menu" link is shown
+	const offset = 300;
+
+	const navigationContainer = $('#cd-nav');
+  const mainNavigation = navigationContainer.find('#cd-main-nav ul');
+  const menuClass= '.cd-nav-trigger';
+
+	//hide or show the "menu" link
+	checkMenu();
+	$(window).scroll(function(){
+		checkMenu();
+	});
+
+	//open or close the menu clicking on the bottom "menu" link
+	$(menuClass).on('click', function(){
+    toggleMenu()
+  });
+  
+  $(document).on('click', function(event) {
+    $target = $(event.target);
+    if (!$target.closest(menuClass).length && $(menuClass).hasClass('menu-is-open')) {
+      toggleMenu();
+    }
+  })
+
+  function toggleMenu() {
+    $(menuClass).toggleClass('menu-is-open');
+		//we need to remove the transitionEnd event handler (we add it when scolling up with the menu open)
+		mainNavigation.off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend').toggleClass('is-visible');
+  }
+
+	function checkMenu() {
+    if ($(window).scrollTop() <= offset) {
+			//check if the menu is open when scrolling up
+			if( mainNavigation.hasClass('is-visible')  && !$('html').hasClass('no-csstransitions') ) {
+				//close the menu with animation
+				mainNavigation.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					//wait for the menu to be closed and do the rest
+					mainNavigation.removeClass('is-visible is-hidden has-transitions');
+					navigationContainer.removeClass('is-fixed');
+					$(menuClass).removeClass('menu-is-open');
+				});
+			//check if the menu is open when scrolling up - fallback if transitions are not supported
+			} else if( mainNavigation.hasClass('is-visible')  && $('html').hasClass('no-csstransitions') ) {
+					mainNavigation.removeClass('is-visible has-transitions');
+					navigationContainer.removeClass('is-fixed');
+					$(menuClass).removeClass('menu-is-open');
+			//scrolling up with menu closed
+			} else {
+				navigationContainer.removeClass('is-fixed');
+				mainNavigation.removeClass('has-transitions');
+			}
+		} 
+	}
+});
+    </script>
+
+  </body>
+</html>

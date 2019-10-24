@@ -1,0 +1,92 @@
+$red: #e73d3e;
+.ListSearchCompanies {
+  top: 0px;
+  color: black;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+
+  li {
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    background: #F2F2F2;
+    width: 315px;
+    height: 80px;
+    margin: 0 auto;
+  }
+ 
+  span {
+    width: 70%;
+  }
+
+  .company-button {
+    border: 1px solid $red;
+    padding: 1em;
+    border-radius: 8px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 12px;
+    color: white; 
+    background: $red;
+    cursor: pointer;
+    width: 70%;
+    margin: 5px;
+
+    
+      
+      &:hover {
+        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6); 
+      }
+  }
+
+  @media (max-width: 480px) {
+    li {
+      width: 325px;
+      height: 70px;
+    }
+    .company-button {
+      font-size: 11px;
+      height: 70%;
+      display: block;
+
+    }
+
+  }
+
+  .noresult {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 0;
+    color: black;
+    background-color: #f2f2f2;
+    height: 40px;
+    border-radius: 25px;
+  }
+
+  .quoteNoresult {
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  a,
+  .addButton {
+    height: 100%;
+  }
+
+  .addButton{
+    margin-left: 10px;
+    border-radius: 0 31px 31px 0;
+    background-color: #094D92
+    ;
+    font-size: 13px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+

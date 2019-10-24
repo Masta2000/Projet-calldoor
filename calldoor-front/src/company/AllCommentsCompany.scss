@@ -1,0 +1,10 @@
+.AllCommentsCompany {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+
+    @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
+    } 
+}

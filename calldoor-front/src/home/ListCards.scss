@@ -1,0 +1,62 @@
+.ListCards {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  position: absolute;
+  
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    line-height: 0;
+  }
+
+  .SearchCompany {
+    display: flex;
+  }
+
+  .noresult {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 0;
+    color: black;
+    background-color: #f2f2f2;
+    height: 40px;
+    border-radius: 25px;
+  }
+
+  .quoteNoresult {
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .quoteNoresultadmin {
+    flex-grow: 1;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  a,
+  .addButton {
+    height: 100%;
+  }
+
+  .addButton{
+    margin-left: 10px;
+    border-radius: 0 31px 31px 0;
+    background-color: #094D92
+    ;
+    font-size: 13px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
