@@ -25,8 +25,6 @@ Versioning: Git
 
 Database manager: PHPmyAdmin / MySQLworkbench
 
-Translated with www.DeepL.com/Translator
-
 FR / 
 
 Calldoor est une web-app permettant aux salariés de pouvoir noter leurs entreprises sur le respect au droit à la déconnexion.
